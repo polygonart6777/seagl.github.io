@@ -402,6 +402,7 @@ sponsors:
     sponsorships:
       2017: thanks
       2024: thanks
+      2025: thanks
 
   - name: GNOME
     url: https://www.gnome.org/
@@ -1145,7 +1146,7 @@ sponsors:
     url: https://huskyfoss.github.io/
     logo:
       horizontal:
-      square: /img/sponsors/HuskyFOSS/husky_foss_fixed.png
+      square: /img/sponsors/HuskyFOSS/HuskyFOSS.png
     description: |-
       We are an organization exploring the realm of free and open source
       software and encouraging their use in daily life. We love to use Linux
@@ -1468,7 +1469,7 @@ sponsors:
     url: https://seattlecommunitynetwork.org/aboutUs.html
     logo:
       horizontal:
-      square: /img/sponsors/LocalConnectivityLab/lcl-logo-print-purplegold.svg
+      square: /img/sponsors/LocalConnectivityLab/LocalConnectivityLab-logo.png
     description: |-
       Seattle Community Network, a local non-profit ISP based on open source
       technologies serving homeless shelters.
@@ -1498,3 +1499,33 @@ sponsors:
        Let's learn together!
     sponsorships:
       2025: media
+
+  - name: Linux Professional Institute
+    url: https://www.lpi.org/
+    logo:
+      horizontal: /img/sponsors/LinuxProfessionalInstitute/LPI_Logo-Colour.png
+      square:
+    description: |-
+       Linux Professional Institute (LPI) is the global certification standard
+       and career support organization for open source professionals. With more
+       than 350,000 certification holders, it’s the world’s first and largest
+       vendor-neutral Linux and open source certification body. LPI has
+       certified professionals in over 180 countries, delivers exams in
+       multiple languages, and has hundreds of training partners.
+
+       Our mission is to promote the use of open source by supporting the
+       people who work with it.
+    sponsorships:
+      2025: media
+
+  - name: Boon Boona Coffee
+    url: https://www.boonboonacoffee.com/
+    logo:
+      horizontal: /img/sponsors/BoonBoona/boon-boona-logo.png
+      square: /img/sponsors/BoonBoona/logo-stroke_410x.svg
+    description: |-
+       Boon Boona Coffee based in Renton, WA. An exclusively African sourcing
+       roaster and your destination for vibrant cafes, and fresh roast to order
+       brews.
+    sponsorships:
+      2025: thanks

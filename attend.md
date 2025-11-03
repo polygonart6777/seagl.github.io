@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Attend SeaGL 2025
 ---
 
@@ -9,10 +9,11 @@ title: Attend SeaGL 2025
 {:.text-center}
 
 <div class="text-center">
-    <p>SeaGL is <b>free to attend</b>, and you <b>do not need to register</b>—just show up!</p>
-    <p>You may attend SeaGL without identifying yourself, and you are encouraged to do so to protect your privacy.</p>
+    <p>SeaGL is <b>free to attend</b>, and <b>registration is optional</b>—just show up!</p>
+    <p>You may attend (<em>and register for</em>) SeaGL without identifying yourself, and you are encouraged to do so to protect your privacy.</p>
+    <p>If you do choose to register, which helps us estimate attendance, you may do so <a href="/register">here</a>.</p>
     <p>All attendees must abide by the <a href="/code_of_conduct">Code of Conduct</a>, and if participating in-person,
-    <a href="/health_and_safety_policy">the Health and Safety Policy</a></p>.
+    <a href="/health_and_safety_policy">the Health and Safety Policy</a>.</p>
 </div>
 
 <div class="row" style="margin-bottom: 1em;margin-top: 2em;">
@@ -23,7 +24,7 @@ title: Attend SeaGL 2025
         <p>SeaGL takes place on the University of Washington campus at the Husky Union Building (known as the HUB).
             This is located on the central campus, west of Stevens Way NE.</p>
         <p>We recommend viewing the indoor map to get familiar with the general layout of the conference.</p>
-        <p><a class="btn btn-primary btn-large" href="/maps/2025">View Conference Maps</a></p>
+        <p><a class="btn btn-primary btn-large" href="{{ site.custom.url.location }}">View Conference Maps</a></p>
       </div>
     </div>
   </div>
@@ -55,10 +56,14 @@ title: Attend SeaGL 2025
 <div class="row" style="margin-bottom: 1em;margin-top: 2em;">
   <div class="col col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
     <div class="panel panel-primary text-center">
-      <div class="panel-heading"><h2 class="panel-title">SeaGL 2025 Account</h2></div>
+      <div class="panel-heading"><h2 class="panel-title">SeaGL {{ site.custom.year }} Account</h2></div>
       <div class="panel-body">
         <p>We'll set you up with a Matrix account to attend. Your account will go away when the conference is over.</p>
-        <p><a class="btn btn-primary btn-large" href="/attend/ephemeral">Take me to the conference</a></p>
+        {%- if site.custom.readiness.attend_portal_launched -%}
+          <p><a class="btn btn-primary btn-large" href="/attend/ephemeral">Take me to the conference</a></p>
+        {%- else -%}
+          <p><span class="btn btn-primary btn-large" disabled>Take me to the conference (soon!)</span></p>
+        {%- endif -%}
         <p>Pick this if you've never used Matrix before.</p>
       </div>
     </div>
@@ -68,14 +73,24 @@ title: Attend SeaGL 2025
       <div class="panel-heading"><h2 class="panel-title">Any Matrix Account</h2></div>
       <div class="panel-body">
         <p>We'll give you instructions to get into our Matrix space and help you navigate the conference.</p>
-        <p><a class="btn btn-primary btn-large" href="/attend/existing">Join with my Matrix account</a></p>
+        {%- if site.custom.readiness.matrix_space_created -%}
+          <p><a class="btn btn-primary btn-large" href="/attend/existing">Join with my Matrix account</a></p>
+        {%- else -%}
+          <p><span class="btn btn-primary btn-large" disabled>Join with my Matrix account (soon!)</span></p>
+        {%- endif -%}
         <p>Pick this if you already have a Matrix account.</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="text-center">Click <a href="/watch">here</a> to just watch and not participate in chat.</div>
+<div class="text-center">
+  {%- if site.custom.readiness.matrix_space_created and site.custom.readiness.attend_portal_launched -%}
+    Click <a href="/watch">here</a> to just watch and not participate in chat.
+  {%- else -%}
+    Closer to the conference, we will also provide a link here to just watch and not participate in chat.
+  {%- endif -%}
+</div>
 
 <!-- class="row" -->
 </div>

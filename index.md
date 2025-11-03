@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: default
 nav: home
 body_id: home
 title: Seattle GNU/Linux Conference
 description: SeaGL is a grassroots technical conference dedicated to spreading awareness and knowledge about the GNU/Linux community and free/libre/open-source software/hardware.
+page_supports_jumbotron: true
 ---
 
 <div class="row"><div class="col-md-4 col-md-push-8" markdown="1">
@@ -20,15 +21,11 @@ SeaGL strives to be welcoming, enjoyable, and informative for professional techn
 
 ### Attend
 
-SeaGL is **free to attend**, and you **do not need to register**—just show up!
+SeaGL is **free to attend**, and **registration is optional**—just show up!
 
-You may attend SeaGL without identifying yourself, and you are encouraged to do so to protect your privacy.
+You may attend (*and register for*) SeaGL without identifying yourself, and you are encouraged to do so to protect your privacy.
 
-<!--
-You may optionally [register]({{ site.custom.url.register }}).
-This gives us more accurate estimates of attendance, which help us raise money for the conference.
-The registration system is free / libre / open source software and we promise to protect your data.
--->
+If you do choose to register, which helps us estimate attendance, you may do so [here](/register).
 
 All attendees must abide by the [Code of Conduct](/coc), and if participating in-person, the [Health and Safety Policy](/health).
 
